@@ -1,1 +1,3 @@
+alias reload='source ~/.bash_profile'
+
 source ~/.rebash/rebash.sh
