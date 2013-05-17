@@ -11,3 +11,5 @@ fi
 
 git clone https://github.com/mrydengren/rebash.git ~/.rebash
 cp ~/.rebash/templates/.bash_profile.template ~/.bash_profile
+
+source ~/.bash_profile
