@@ -10,10 +10,10 @@ Standing on the shoulders of giant. This project was based on and inspired by [o
 
 You can install 'rebash' via the command line with 'curl'.
 
-    curl -L https://github.com/mrydengren/rebash/raw/master/install.sh | bash
+    curl -L https://raw.github.com/mrydengren/rebash/master/tools/install.sh | bash
     
 ## Uninstall
 
 You can uninstall 'rebash' via the command line with 'curl'.
 
-    curl -L https://github.com/mrydengren/rebash/raw/master/uninstall.sh | bash
+    curl -L https://raw.github.com/mrydengren/rebash/master/tools/uninstall.sh | bash
