@@ -3,7 +3,7 @@ for script_file_type in "aliases" "functions"; do
         continue;
     fi
     
-    for script_file in ~/.rebash/${script_file_type}/*.sh; do
+    for script_file in ~/.rebash/${script_file_type}/*.bash; do
         source $script_file
     done
 done
