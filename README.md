@@ -1,6 +1,6 @@
 # rebash
 
-Adds custom aliases, commands and scripts to the Bash shell.
+Adds custom aliases and functions to the Git Bash shell (Windows).
 
 ## Credits
 
@@ -10,10 +10,10 @@ Standing on the shoulders of giant. This project was based on and inspired by [o
 
 You can install 'rebash' via the command line with 'curl'.
 
-    curl -L https://raw.github.com/mrydengren/rebash/master/tools/install.sh | bash
+    curl -L https://raw.github.com/mrydengren/rebash/master/tools/install.bash | bash
     
 ## Uninstall
 
 You can uninstall 'rebash' via the command line with 'curl'.
 
-    curl -L https://raw.github.com/mrydengren/rebash/master/tools/uninstall.sh | bash
+    curl -L https://raw.github.com/mrydengren/rebash/master/tools/uninstall.bash | bash
