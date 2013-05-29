@@ -8,12 +8,9 @@ Standing on the shoulders of giant. This project was based on and inspired by [o
 
 ## Install
 
-You can install 'rebash' via the command line with 'curl'.
-
-    curl -L https://raw.github.com/mrydengren/rebash/master/tools/install.bash | bash
+    > git clone https://github.com/mrydengren/rebash.git ~/.rebash
+    > . ~/.rebash/tools/install.sh
     
 ## Uninstall
 
-You can uninstall 'rebash' via the command line with 'curl'.
-
-    curl -L https://raw.github.com/mrydengren/rebash/master/tools/uninstall.bash | bash
+    > . ~/.rebash/tools/uninstall.sh
