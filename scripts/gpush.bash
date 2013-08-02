@@ -1,21 +1,30 @@
 #!/usr/bin/env bash
 show_usage () {
-    echo "Usage: gpush [<remote-name=origin>]"
+    echo "Usage: gpush [-f | --force] [<remote-name=origin>]"
     echo "Pushes the current branch."
     echo ""
+    echo "  -f, --force             overwrite remote repository; use it with care."
     echo "  -h, --help              display this help text and exit"
     echo ""    
 }
 
-case "$1" in
-    -h|--help|"help")
-        show_usage
-        exit
-        ;;
-    *)
-        remote=${1:-"origin"}
-        ;;
-esac
+remote="origin"
+
+while test "$#" != 0; do
+    case "$1" in
+        -h|--help|"help")
+            show_usage
+            exit
+            ;;
+        -f|--force)
+            options="--force"
+            ;;
+        *)
+            remote=$1
+            ;;
+    esac
+    shift
+done
 
 current_branch=$(git symbolic-ref --short HEAD)
-git push $remote $current_branch
+git push $options $remote $current_branch
