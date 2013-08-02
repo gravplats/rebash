@@ -8,7 +8,7 @@ show_usage () {
 }
 
 case "$1" in
-    -h|--help)
+    -h|--help|"help")
         show_usage
         exit
         ;;
