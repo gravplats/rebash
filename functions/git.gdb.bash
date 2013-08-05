@@ -3,7 +3,7 @@ function gdb () {
         echo "Usage: gdb <branch>"
         echo "Forcefully deletes the specified local and remote, if any, branch."
     else
-        if [[ ! -z $(git for-each-ref --format='%(upstream:short)' "refs/heads/$1") ]]; then
+        if [[ ! -z $(git ls-remote --heads origin "refs/heads/$1") ]]; then
             git push origin ":$1"
         fi
         git branch -D $1
