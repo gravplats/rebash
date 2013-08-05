@@ -3,7 +3,7 @@ show_usage () {
     echo "Usage: gundo [options]"
     echo "Undoes the most recent merge, rebase or reset."
     echo ""
-    echo "  -h, --help              display this help text and exit"
+    echo "  -h, --help              displays this help text and exits"
     echo ""
 }
 

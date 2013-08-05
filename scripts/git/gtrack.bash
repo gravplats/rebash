@@ -3,7 +3,7 @@ show_usage () {
     echo "Usage: gtrack [<remote-name=origin>]"
     echo "Tracks the current branch."
     echo ""
-    echo "  -h, --help              display this help text and exit"
+    echo "  -h, --help              displays this help text and exits"
     echo ""    
 }
 

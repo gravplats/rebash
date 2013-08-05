@@ -3,7 +3,7 @@ show_usage () {
     echo "Usage: gunp [<remote-name=origin>]"
     echo "Shows unpushed commits."
     echo ""
-    echo "  -h, --help              display this help text and exit"
+    echo "  -h, --help              displays this help text and exits"
     echo ""    
 }
 

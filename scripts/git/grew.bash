@@ -4,7 +4,7 @@ show_usage () {
     echo "Rewinds the HEAD."
     echo ""
     echo "      --hard              resets the index and working tree; this is the default action"
-    echo "  -h, --help              display this help text and exit"
+    echo "  -h, --help              displays this help text and exits"
     echo "      --mixed             resets the index but not the working tree"
     echo "      --soft              resets HEAD but leaves files 'changed to be commited'"
     echo ""

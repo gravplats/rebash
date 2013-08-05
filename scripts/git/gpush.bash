@@ -3,8 +3,8 @@ show_usage () {
     echo "Usage: gpush [-f | --force] [<remote-name=origin>]"
     echo "Pushes the current branch."
     echo ""
-    echo "  -f, --force             overwrite remote repository; use it with care."
-    echo "  -h, --help              display this help text and exit"
+    echo "  -f, --force             overwrites remote repository; use it with care."
+    echo "  -h, --help              displays this help text and exits"
     echo ""    
 }
 
