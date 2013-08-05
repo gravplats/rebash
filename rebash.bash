@@ -23,5 +23,9 @@ if [ -d ~/.rebash/scripts ]; then
         ln -s $script_file $target
     done
 fi
- 
+
+if [[ -e ~/.bash_profile_custom ]]; then
+    source ~/.bash_profile_custom
+fi
+
 IFS=$ORIGINAL_IFS
