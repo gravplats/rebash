@@ -1,7 +1,7 @@
 ORIGINAL_IFS=$IFS
 IFS=$(echo -en "\n\b")
  
-source ./rebash.command.bash
+source ~/.rebash/rebash.command.bash
  
 for script_file_type in "aliases" "functions"; do
     if [ ! -d ~/.rebash/${script_file_type} ]; then
