@@ -4,7 +4,7 @@ Adds custom aliases, functions and scripts to the Git Bash shell (Windows).
 
 ## Credits
 
-Standing on the shoulders of giant. This project was based on and inspired by [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) and [bash-it](https://github.com/revans/bash-it).
+Standing on the shoulders of giants. This project was based on and inspired by [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) and [bash-it](https://github.com/revans/bash-it).
 
 ## Install
 
