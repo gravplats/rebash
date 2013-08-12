@@ -12,18 +12,23 @@ rebash_go () {
 }
 
 rebash_update () {
-    git pull origin master
+    git pull --ff-only origin master
+    reload
 }
 
 rebash () {
     case $1 in
         -h|--help|"help")
-            rebash_help ;;
+            rebash_help 
+            ;;
         go)
-            rebash_go ;;
+            rebash_go 
+            ;;
         update)
-            rebash_update ;;
+            rebash_update 
+            ;;
         *)
-            rebash_help ;;           
+            rebash_help 
+            ;;
     esac
 }
