@@ -22,5 +22,8 @@ __git_complete gll _git_log
 
 alias gp='git pull --ff-only'
 
+alias gre='git rebase'
+__git_complete gre _git_rebase
+
 alias gs='git status --short --branch'
 alias gss='git status'
