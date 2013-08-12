@@ -30,6 +30,7 @@ while test "$#" != 0; do
             ;;
         *)
             commits=$1
+            ;;
     esac
     shift
 done
