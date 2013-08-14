@@ -1,3 +1,5 @@
 alias reload='source ~/.bash_profile'
 
-source ~/.rebash/rebash.bash
+if [[ -e ~/.rebash/rebash.bash ]]; then
+    . ~/.rebash/rebash.bash
+fi
