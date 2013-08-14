@@ -13,6 +13,10 @@ rebash_go () {
 }
 
 rebash_uninstall () {
+    if [[ $PWD == ~/.rebash* ]]; then
+        cd ~
+    fi
+
     . ~/.rebash/tools/uninstall.bash
 }
 
