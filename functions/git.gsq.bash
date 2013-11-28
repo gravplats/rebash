@@ -1,11 +1,14 @@
 gsq () {
-    if [[ -z "$1" ]]; then
-        echo "Usage: gsq <branch> [<message>]"
+    if [[ $1 = "help" ]]; then
+        echo "Usage: gsq <branch>"
         echo "Squashes all commits that are in the current branch but not in the specified branch into a single commit."
     else
-        git log --abbrev-commit --format=oneline $1.. | wc -l | git reset --soft HEAD~$(sed "s/^ *//g")
-        [[ -z "$2" ]] && git commit || git commit --message "$2"
-    fi                          
+        local branch=${1:-$(__rebash_git_relative_branch)}
+        git log --abbrev-commit --format=oneline $branch.. | wc -l | git reset --soft HEAD~$(sed "s/^ *//g")
+
+        echo "Squashing commits in '$(__rebash_git_current_branch)' but not in '$branch'."
+        git commit
+    fi
 }
 
 #autocomplete
