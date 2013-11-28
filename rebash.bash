@@ -3,7 +3,7 @@ IFS=$(echo -en "\n\b")
  
 source ~/.rebash/rebash.command.bash
  
-for script_file_type in "aliases" "functions"; do
+for script_file_type in "lib" "aliases" "functions"; do
     if [ ! -d ~/.rebash/${script_file_type} ]; then
         continue;
     fi
