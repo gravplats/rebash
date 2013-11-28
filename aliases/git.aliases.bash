@@ -5,6 +5,7 @@ alias gb='git branch --verbose'
 alias gbb='git branch'
 
 alias gc='git commit --message'
+alias gcc='git commit'
 
 alias gco='git checkout'
 alias gcob='git checkout -b'
