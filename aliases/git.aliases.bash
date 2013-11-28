@@ -3,6 +3,7 @@ alias gam='git commit --amend --reuse-message HEAD'
 
 alias gb='git branch --verbose'
 alias gbb='git branch'
+alias gbr='git branch -avv'
 
 alias gc='git commit --message'
 alias gcc='git commit'
