@@ -7,7 +7,7 @@ gsq () {
         git log --abbrev-commit --format=oneline $branch.. | wc -l | git reset --soft HEAD~$(sed "s/^ *//g")
 
         echo "Squashing commits in '$(__rebash_git_current_branch)' but not in '$branch'."
-        git commit
+        git commit || git reset --hard ORIG_HEAD
     fi
 }
 
