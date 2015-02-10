@@ -1,5 +1,0 @@
-alias reload='source ~/.bash_profile'
-
-if [[ -e ~/.rebash/rebash.bash ]]; then
-    . ~/.rebash/rebash.bash
-fi

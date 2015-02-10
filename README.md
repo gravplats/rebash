@@ -6,14 +6,14 @@ Adds custom aliases, functions and scripts to the Git Bash shell (Windows).
 
 Standing on the shoulders of giants. This project was based on and inspired by [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) and [bash-it](https://github.com/revans/bash-it).
 
-## Install
+## Install on Windows
 
     > git clone https://github.com/mrydengren/rebash.git ~/.rebash
-    > . ~/.rebash/tools/install.bash
+    > . ~/.rebash/tools/windows/install.bash
     
-## Uninstall
+## Uninstall on Windows
 
-    > . ~/.rebash/tools/uninstall.bash
+    > . ~/.rebash/tools/windows/uninstall.bash
     
 or run
 
