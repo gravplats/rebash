@@ -9,13 +9,9 @@ Standing on the shoulders of giants. This project was based on and inspired by [
 ## Install on Windows
 
     > git clone https://github.com/mrydengren/rebash.git ~/.rebash
-    > . ~/.rebash/tools/windows/install.bash
+    > . ~/.rebash/tools/install.win.bash
     
-## Uninstall on Windows
-
-    > . ~/.rebash/tools/windows/uninstall.bash
-    
-or run
+## Uninstall
 
     > rebash uninstall
     

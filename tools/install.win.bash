@@ -4,6 +4,6 @@ if [ -f ~/.bash_profile ] || [ -h ~./.bash_profile ]; then
     cp --interactive ~/.bash_profile ~/.bash_profile.bak    
 fi
 
-cp ~/.rebash/templates/windows/.bash_profile.template ~/.bash_profile
+cp ~/.rebash/templates/.bash_profile.win.template.bash ~/.bash_profile
 
-source ~/.bash_profile
+. ~/.bash_profile

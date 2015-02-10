@@ -1,18 +1,7 @@
 ORIGINAL_IFS=$IFS
 IFS=$(echo -en "\n\b")
 
-# define the rebash command.
-for command_dir in "commands" "commands/windows"; do
-    if [ ! -d ~/.rebash/${command_dir} ]; then
-        continue;
-    fi
-    
-    for command in ~/.rebash/${command_dir}/*.bash; do
-        source $command
-    done
-done
-
-source ~/.rebash/rebash.bash
+. ~/.rebash/rebash.bash
 
 # define aliases and functions.
 for script_file_type in "lib" "aliases" "functions"; do
@@ -25,9 +14,9 @@ for script_file_type in "lib" "aliases" "functions"; do
     done
 done
 
-# include any user-specific functionality.
+# define any user-specific functionality.
 if [[ -e ~/.bash_profile_custom ]]; then
-    source ~/.bash_profile_custom
+    . ~/.bash_profile_custom
 fi
 
 IFS=$ORIGINAL_IFS
