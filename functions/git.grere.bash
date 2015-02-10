@@ -5,7 +5,7 @@ grere () {
     else
         git rebase $1 $2
         git rebase $2 $1
-    fi                          
+    fi
 }
 
 #autocomplete

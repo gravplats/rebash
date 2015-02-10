@@ -8,10 +8,9 @@ gint () {
         
         if [[ "$feature_branch" == "$release_branch" ]]; then
             echo "You're on a release branch."
-            return;
-        fi
-
-        git rebase $feature_branch $release_branch
+        else
+            git rebase $feature_branch $release_branch
+        fi        
     fi
 }
 
