@@ -4,7 +4,7 @@ gunp () {
         echo "Shows unpushed commits."
     else
         local remote=${1:-"origin"}
-        local current_branch=$(git symbolic-ref --short HEAD)
+        local current_branch=$(__rebash_git_current_branch)
         
         git log --abbrev-commit --format=oneline "$remote/$current_branch..HEAD"
     fi

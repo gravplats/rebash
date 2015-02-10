@@ -1,5 +1,5 @@
-function gdb () {
-    if [[ -z "$1" ]]; then
+gdb () {
+    if [[ $1 = "help" || -z "$1" ]]; then
         echo "Usage: gdb <branch>"
         echo "Forcefully deletes the specified local and remote, if any, branch."
     else

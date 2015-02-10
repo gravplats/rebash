@@ -1,6 +1,6 @@
 gundo () {
     if [[ $1 = "help" ]]; then
-        echo "Usage: gundo [options]"
+        echo "Usage: gundo"
         echo "Undoes the most recent merge, rebase or reset."
     else
         echo "The original HEAD refers to the following commit:"

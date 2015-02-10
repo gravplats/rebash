@@ -4,7 +4,7 @@ gpush () {
         echo "Pushes the current branch."
     else
         local remote="origin"
-        local current_branch=$(git symbolic-ref --short HEAD)
+        local current_branch=$(__rebash_git_current_branch)
 
         while test "$#" != 0; do
             case "$1" in

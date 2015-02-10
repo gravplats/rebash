@@ -4,12 +4,12 @@ gint () {
         echo "Integrates a feature branch with the master (release) branch."
     else
         local feature_branch=$(__rebash_git_current_branch)
-        local release_branch=$(__rebash_git_relative_branch) 
+        local master_branch=$(__rebash_git_master_branch) 
         
-        if [[ "$feature_branch" == "$release_branch" ]]; then
-            echo "You're on a release branch."
+        if [[ "$feature_branch" == "$master_branch" ]]; then
+            echo "You're on the master branch."
         else
-            git rebase $feature_branch $release_branch
+            git rebase $feature_branch $master_branch
         fi        
     fi
 }

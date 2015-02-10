@@ -4,7 +4,7 @@ gtrack () {
         echo "Tracks the current branch."
     else
         local remote=${1:-"origin"}
-        local current_branch=$(git symbolic-ref --short HEAD)
+        local current_branch=$(__rebash_git_current_branch)
         
         git branch --set-upstream-to "$remote/$current_branch"
     fi
