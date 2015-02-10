@@ -9,6 +9,3 @@ girb () {
         git log --abbrev-commit --format=oneline $branch.. | wc -l | git rebase --interactive HEAD~$(sed "s/^ *//g")
     fi
 }
-
-# autocomplete
-__git_complete girb _git_rebase
