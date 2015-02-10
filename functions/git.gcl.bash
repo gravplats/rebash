@@ -6,7 +6,7 @@ gcl () {
         echo "Example: gcl octocat/Spoon-Knife"
     else
         # remove leading and trailing slashes.
-    local repository=$(echo $1 | sed -E 's/^\/|\/$//g')
-        git clone "https://github.com/$repository"
+        local repository=$(echo $1 | sed -E 's/^\/|\/$//g')
+        git clone "https://github.com/$repository" $2
     fi
 }
