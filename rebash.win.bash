@@ -10,7 +10,7 @@ for script_file_type in "lib" "aliases" "functions"; do
     fi
     
     for script_file in ~/.rebash/${script_file_type}/*.bash; do
-        source $script_file
+        . $script_file
     done
 done
 
