@@ -1,7 +1,7 @@
-glint () {
+gint () {
     if [[ $1 = "help" ]]; then
-        echo "Usage: glint"
-        echo "Local integration of feature branch with release branch."
+        echo "Usage: gint"
+        echo "Integrates a feature branch with the master (release) branch."
     else
         local feature_branch=$(__rebash_git_current_branch)
         local release_branch=$(__rebash_git_relative_branch) 

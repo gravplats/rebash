@@ -1,7 +1,7 @@
 girb () {
     if [[ $1 = "help" ]]; then
         echo "Usage: girb <branch>"
-        echo "Performs an interactive rebase on the commits that are in the current branch but not in the specified branch."        
+        echo "Performs an interactive rebase on the commits that are in the current branch but not in the specified branch."
     else
         local branch=${1:-$(__rebash_git_relative_branch)}
    
