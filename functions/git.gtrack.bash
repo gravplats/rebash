@@ -1,4 +1,4 @@
-gtrack() {
+gtrack () {
     if [[ $1 = "help" ]]; then
         echo "Usage: gtrack [<remote-name=origin>]"
         echo "Tracks the current branch."
