@@ -5,11 +5,11 @@ IFS=$(echo -en "\n\b")
 
 # define aliases and functions
 for script_file_type in "lib" "lib/osx" "aliases" "functions"; do
-    if [ ! -d ~/.rebashx/${script_file_type} ]; then
-        continue;
+    if [[ ! -d ~/.rebash/${script_file_type} ]]; then
+		continue;
     fi
     
-    for script_file in ~/.rebashx/${script_file_type}/*.bash; do
+    for script_file in ~/.rebash/${script_file_type}/*.bash; do
         . $script_file
     done
 done
