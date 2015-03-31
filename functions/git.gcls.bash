@@ -3,7 +3,7 @@ gcls () {
         echo "Usage: gcls <github-repository>"
         echo "Clones a GitHub repository."
         echo ""
-        echo "Example: gcl octocat/Spoon-Knife"
+        echo "Example: gcls octocat/Spoon-Knife"
     else
         # remove leading and trailing slashes.
         local repository=$(echo $1 | sed -E 's/^\/|\/$//g')
