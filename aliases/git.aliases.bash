@@ -24,7 +24,7 @@ __git_complete glg _git_log
 __git_complete gll _git_log
 __git_complete glt _git_log
 
-alias gp='git pull --ff-only'
+alias gp='git pull --rebase'
 
 alias gre='git rebase'
 __git_complete gre _git_rebase
