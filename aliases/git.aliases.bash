@@ -11,6 +11,8 @@ alias gcc='git commit'
 alias gco='git checkout'
 alias gcob='git checkout -b'
 
+alias gres='git reset --hard'
+
 __git_complete gco _git_checkout
 __git_complete gcob _git_checkout
 
